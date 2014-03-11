@@ -358,7 +358,7 @@ const char ** iniparser_getseckeys(dictionary * d, const char * s)
 /*--------------------------------------------------------------------------*/
 const char * iniparser_getstring(dictionary * d, const char * key, const char * def)
 {
-    const char * lc_key ;
+    char * lc_key ;
     const char * sval ;
 
     if (d==NULL || key==NULL)
